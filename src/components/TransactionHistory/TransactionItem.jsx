@@ -3,8 +3,8 @@ import css from "./TransactionHistory.module.css";
 
 export default function TransactionItem({ type, amount, currency }) {
   return (
-    <tr className={css.transactionItem}>
-      <td>{type}</td>
+    <tr>
+      <td className={css.type}>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
     </tr>
