@@ -1,7 +1,10 @@
 import Profile from "./Profile/Profile";
 import userData from "../data/userData.json";
 
-function App() {
+import FriendList from "./FriendList/FriendList";
+import friends from "../data/friends.json";
+
+export default function App() {
   return (
     <>
       <Profile
@@ -11,8 +14,7 @@ function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
+      <FriendList friends={friends} />
     </>
   );
 }
-
-export default App;
