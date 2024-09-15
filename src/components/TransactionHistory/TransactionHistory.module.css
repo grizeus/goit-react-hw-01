@@ -1,9 +1,14 @@
-.transactionHistory {
-  /* border: 1px solid #000; */
+.tableContainer {
+  margin: 0 auto;
   width: 420px;
-  margin: 8px auto;
-  border-collapse: collapse;
+  border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.transactionHistory {
+  width: 100%;
+  border-collapse: collapse;
 }
 
 th,
@@ -11,6 +16,7 @@ td {
   padding: 10px;
   text-align: center;
   border: 1px solid black ;
+  border-bottom: none;
 }
 
 th {
@@ -36,11 +42,4 @@ th:last-child {
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
-}
-
-th:first-of-type {
-  border-top-left-radius: 10px;
-}
-th:last-of-type {
-  border-top-right-radius: 10px;
 }
